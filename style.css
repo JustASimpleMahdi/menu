@@ -26,7 +26,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transform: translate(-1rem, 0);
-
+    width: max-content;
     transition: 250ms;
     /* box-shadow: 0 0 10px #0002; */
 }
@@ -52,7 +52,8 @@ header {
 .menu ul li:last-child {
     border-bottom: none;
 }
-.menu ul li.active > ul {
+.menu ul li.active > ul,
+.menu ul li:hover > ul {
     visibility: visible;
     opacity: 1;
     transform: translate(0, 0);
